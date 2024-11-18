@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <ul id="mobileNav" class="mobile-nav-content">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="example.html">Example</a></li>
+                    <li><a href="projects.html">Past Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="desktop-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="example.html">Example</a></li>
+                    <li><a href="projects.html">Past Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact-container">
+                <div class="contact-form">
+                    <h2>Contact Me</h2>
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
 
-</body>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-details">
+                    <h2>Contact Details</h2>
+                    <p><strong>Email:</strong> martina.ait.m@example.com</p>
+                    <p><strong>Currently Based In:</strong> Perth WA Australia</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Martina Ait. All rights reserved.</p>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>
