@@ -1,0 +1,140 @@
+/* Basic Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f2ec;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d0c7b6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #f0e8d9;
+    color: black;
+}
+
+footer {
+    background-color: #000000;
+    padding: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #d0c7b6;
+    padding: 10px;
+}
+
+/* Mobile Navigation Styles */
+.mobile-nav-content {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #d0c7b6;
+    left: 0;
+    top: 50px;
+    width: 100%;
+}
+
+.mobile-nav-content li {
+    width: 100%;
+    text-align: left;
+}
+
+.mobile-nav-content a {
+    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.mobile-nav-content a:hover {
+    background-color: #f0e8d9;
+    color: black;
+}
+
+.hamburger {
+    display: block;
+    font-size: 30px;
+    color: #FFFFFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Desktop Navigation Styles (min-width: 768px) */
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: transparent;
+        position: static;
+        margin: 0;
+    }
+
+    .desktop-nav li {
+        display: inline;
+    }
+
+    .desktop-nav a {
+        color: #FFFFFF;
+        text-decoration: none;
+        padding: 8px 16px;
+    }
+
+    .desktop-nav a:hover {
+        background-color: #f0e8d9;
+        color: black;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-nav-content {
+        display: none;
+    }
+}
+
+/* Mobile Dropdown Show Styles */
+@media (max-width: 767px) {
+    .mobile-nav-content.show {
+        display: block;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+}
