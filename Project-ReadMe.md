@@ -29,3 +29,12 @@ Thank you for visiting!
 
 ---
 This portfolio is my final project for the unit, and I've ensured it represents the best of my web development abilities.
+
+| Name       | RGB            | HEX      |
+|------------|----------------|----------|
+| black      | 0, 0, 0        | #000000 |
+| white      | 255, 255, 255  | #FFFFFF |
+| green      | 221, 238, 228  | #ddeee4 |
+| beige      | 245,242,236  | #f5f2ec |
+| dark beige | 240,232,217  | #f0e8d9 |
+| brown      | 208,199,182  | #d0c7b6 |
