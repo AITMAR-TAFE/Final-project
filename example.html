@@ -1,10 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Population API</title>
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <ul id="mobileNav" class="mobile-nav-content">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="example.html">Example</a></li>
+                    <li><a href="projects.html">Past Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="desktop-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="example.html">Example</a></li>
+                    <li><a href="projects.html">Past Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>What's the Population of your Country?</h1>
+            <h1>Get the latest figures now!</h1>
+            <form id="populationForm">
+                <label for="countryInput">Enter a Country:</label>
+                <input type="text" id="countryInput" placeholder="e.g., Estonia" required>
+                <button type="submit">Get Population</button>
+                <P>The population is:</P>
+                <p id="result"></p>
+            </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 Martina Ait. All rights reserved.</p>
+        </footer>
+        <script src="assets/js/script.js"></script>
+    </body>
 </html>

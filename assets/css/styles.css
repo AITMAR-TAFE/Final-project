@@ -108,6 +108,22 @@ p {
     text-align: left;
 }
 
+form {
+    text-align: left;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color:#ddeee4;
+    height: 200px;
+}
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #d0c7b6;
+    border-radius: 4px;
+}
+
 footer {
     background-color: #000000;
     padding: 20px;
