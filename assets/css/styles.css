@@ -163,6 +163,28 @@ input {
     border-radius: 4px;
 }
 
+.project-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 50px;
+}
+
+.project-grid-container p {
+    text-align: left;
+}
+
+.project-grid-container h1 {
+    text-align: left;
+}
+
+.pic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 600px;
+}
+
 footer {
     background-color: #000000;
     padding: 20px;
