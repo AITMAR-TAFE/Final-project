@@ -108,15 +108,54 @@ p {
     text-align: left;
 }
 
-form {
-    text-align: left;
-    padding: 20px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+#populationForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    font-size: 18px;
     background-color:#ddeee4;
-    height: 200px;
 }
 
+.form-row {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.form-label {
+    margin-right: 10px;
+}
+
+.button-row {
+    justify-content: center;
+}
+
+.form-input {
+    flex-grow: 1;
+    background-color: white;
+}
+
+.form-response {
+    margin-top: 10px;
+}
+
+.form-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #d0c7b6;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.form-button:hover {
+    background-color: #f0e8d9;
+}
 input {
     padding: 8px;
     margin-right: 10px;

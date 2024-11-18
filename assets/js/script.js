@@ -12,3 +12,31 @@ document.addEventListener("click", function(event) {
         mobileNav.classList.remove("show");
     }
 })
+
+document.getElementById('populationForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const country = document.getElementById('countryInput').value.trim();
+    const resultElement = document.getElementById('result');
+    resultElement.textContent = "Loading...";
+
+    try {
+        const response = await fetch(`https://api.api-ninjas.com/v1/population?country=${country}`, {
+            headers: {
+                'X-Api-Key': 'YaTiJRinkDZsKzunJpagpg==nt6gPSK0CL4Ps1HE',
+            }
+        });
+
+        const data = await response.json();
+        if (data?.historical_population && data.historical_population.length > 0) {
+            const latestData = data.historical_population[0];
+            const population = latestData.population.toLocaleString();
+            const year = latestData.year;
+            resultElement.textContent = `The population of ${country} in ${year} was ${population}.`;
+        } else {
+            resultElement.textContent = `No valid historical population data found for "${country}".`;
+        }
+    } catch (error) {
+        resultElement.textContent = "Error fetching data. Please try again.";
+    }
+});

@@ -32,11 +32,17 @@
             <h1>What's the Population of your Country?</h1>
             <h1>Get the latest figures now!</h1>
             <form id="populationForm">
-                <label for="countryInput">Enter a Country:</label>
-                <input type="text" id="countryInput" placeholder="e.g., Estonia" required>
-                <button type="submit">Get Population</button>
-                <P>The population is:</P>
-                <p id="result"></p>
+                <section class="form-row">
+                    <label for="countryInput" class="form-label">Enter Country:</label>
+                    <input type="text" id="countryInput" placeholder="e.g., Estonia" required class="form-input">
+                </section>
+                <section class="form-row button-row">
+                    <button type="submit" class="form-button">Get Population</button>
+                </section>
+                <section class="form-row">
+                    <label for="result" class="form-label">Response:</label>
+                    <p id="result" class="form-response"></p>
+                </section>
             </form>
         </main>
         <footer>
