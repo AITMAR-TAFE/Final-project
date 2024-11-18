@@ -11,6 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #f5f2ec;
 }
 
 main {
@@ -18,6 +19,8 @@ main {
     padding: 50px 20px;
     text-align: center;
     background-color: #f5f2ec;
+    max-width: 1500px;
+    align-self: center;
 }
 
 p {
@@ -61,11 +64,49 @@ p {
 }
 
 .profile-pic {
-    max-width: 150px;
-    border-radius: 50%;
+    max-width: 200px;
     object-fit: cover;
 }
 
+.resume {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    background-color: #ddeee4;
+}
+
+.resume h1{
+    font-size: xxx-large;
+}
+.about-education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    position: relative;
+    align-items: center;
+    text-align: left;
+}
+
+.floating-image {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #333;
+}
+
+.skills-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    text-align: left;
+}
 
 footer {
     background-color: #000000;
